@@ -1,4 +1,4 @@
-﻿
+﻿using Question.DAL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,8 +13,14 @@ namespace QuestionForm
 {
     public partial class Form1 : Form
     {
-        
-            //first  commit Vlasiyk N.
-            // Hello, Mars!!!
+
+        //first  commit Vlasiyk N.
+        // Hello, Mars!!!
+        public Form1()
+        {
+            
+            InitializeComponent();
+        }
+
     }
 }

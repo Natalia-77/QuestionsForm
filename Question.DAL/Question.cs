@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace Question
+namespace Question.DAL
 {
     [Table("tblQuestions")]
     public class Question
