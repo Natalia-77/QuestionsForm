@@ -11,11 +11,22 @@ namespace Question
     {              
             [Key]
             public int Id { get; set; }
+        /// <summary>
+        /// Text of question
+        /// </summary>
 
             [Required, StringLength(1000)]
             public string Text { get; set; }
 
-            public virtual ICollection<Answer> Answers { get; set; }
+        /// <summary>
+        /// Image for question
+        /// </summary>
+            [StringLength(255)]
+            public string Image { get; set; }
+        /// <summary>
+        /// Collection of answers
+        /// </summary>
+        public virtual ICollection<Answer> Answers { get; set; }
 
         
 
