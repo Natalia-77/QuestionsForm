@@ -7,7 +7,7 @@ namespace Question.DAL
 {
    public class AddData
     {
-        
+        //testing
         public static void Add(MyContext context)
         {
             AddQuestion(context);            
