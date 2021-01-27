@@ -1,7 +1,7 @@
 ﻿
 namespace QuestionForm
 {
-    partial class Form1
+    partial class MenuForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -31,13 +31,14 @@ namespace QuestionForm
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // MenuForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(752, 395);
-            this.Name = "Form1";
-            this.Text = "MainForm";
+            this.ClientSize = new System.Drawing.Size(658, 296);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "MenuForm";
+            this.Text = "MenuForm";
             this.ResumeLayout(false);
 
         }
