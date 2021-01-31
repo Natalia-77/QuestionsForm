@@ -12,7 +12,7 @@ namespace QuestionForm
     {
         public TrainingForm()
         {
-            InitializeComponent();
+            //InitializeComponent();
         }
 
 
