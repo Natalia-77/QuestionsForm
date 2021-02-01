@@ -24,5 +24,9 @@ namespace QuestionForm
             InitializeComponent();
         }
 
+        private void btnTraining_Click(object sender, EventArgs e)
+        {
+            new TrainingForm().ShowDialog();
+        }
     }
 }
