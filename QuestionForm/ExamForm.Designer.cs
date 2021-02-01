@@ -109,7 +109,7 @@ namespace QuestionForm
             // 
             // pBoxImage
             // 
-            this.pBoxImage.Image = ((System.Drawing.Image)(resources.GetObject("pBoxImage.Image")));
+            //this.pBoxImage.Image = ((System.Drawing.Image)(resources.GetObject("pBoxImage.Image")));
             this.pBoxImage.Location = new System.Drawing.Point(487, 84);
             this.pBoxImage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBoxImage.Name = "pBoxImage";

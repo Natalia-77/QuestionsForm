@@ -92,7 +92,7 @@ namespace QuestionForm
             // 
             // pBoxImage
             // 
-            this.pBoxImage.Image = ((System.Drawing.Image)(resources.GetObject("pBoxImage.Image")));
+           // this.pBoxImage.Image = ((System.Drawing.Image)(resources.GetObject("pBoxImage.Image")));
             this.pBoxImage.Location = new System.Drawing.Point(426, 63);
             this.pBoxImage.Name = "pBoxImage";
             this.pBoxImage.Size = new System.Drawing.Size(265, 265);
