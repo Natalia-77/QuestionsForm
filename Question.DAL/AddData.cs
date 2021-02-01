@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Question.DAL.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -301,9 +302,50 @@ namespace Question.DAL
                 context.SaveChanges();
             }
 
-        }
+            if (context.Users.Count() == 0)
+            {
+                var user = new User
+                {
+                    Name = "Петро",
+                    Surname = "Гончарук",
+                    Login = "petro",
+                    Password = PassHash.HashPassword("123"),
+                };
 
+                context.Users.Add(user);
+                context.SaveChanges();
+                var session = new List<Session>
+                {
+                    new Session{UserId=user.Id,Begin=DateTime.Now,End=DateTime.Now.AddMinutes(12),Marks=72M}
+                    
+                };
+                context.Sessions.AddRange(session);
+                context.SaveChanges();
 
+                var res = new List<Result>
+                {
+                    new Result{SessionId=1,AnswerId=3},
+                    new Result{SessionId=1,AnswerId=7},
+                    new Result{SessionId=1,AnswerId=9},
+                    new Result{SessionId=1,AnswerId=12},
+                    new Result{SessionId=1,AnswerId=14},
+                    new Result{SessionId=1,AnswerId=18},
+                    new Result{SessionId=1,AnswerId=21},
+                    new Result{SessionId=1,AnswerId=23},
+                    new Result{SessionId=1,AnswerId=28},
+                    new Result{SessionId=1,AnswerId=30},
+                    new Result{SessionId=1,AnswerId=34},
+                    new Result{SessionId=1,AnswerId=35},
+                    new Result{SessionId=1,AnswerId=39},
+                    new Result{SessionId=1,AnswerId=43},
+                    new Result{SessionId=1,AnswerId=46},
+                    new Result{SessionId=1,AnswerId=49}
+                };
+                context.Results.AddRange(res);
+                context.SaveChanges();
+            }
+
+        }// end of Add
 
 
     }
