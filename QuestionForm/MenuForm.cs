@@ -11,13 +11,13 @@ using System.Windows.Forms;
 
 namespace QuestionForm
 {
-    public partial class Form1 : Form
+    public partial class MenuForm : Form
     {
         private readonly MyContext _context;
 
         //first  commit Vlasiyk N.
         // Hello, Mars!!!
-        public Form1()
+        public MenuForm()
         {
             _context = new MyContext();
             AddData.Add(_context);
