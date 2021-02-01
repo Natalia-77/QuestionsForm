@@ -19,10 +19,18 @@ namespace QuestionForm
         // Hello, Mars!!!
         public MenuForm()
         {
-            _context = new MyContext();
+           _context = new MyContext();
             AddData.Add(_context);
-            InitializeComponent();
+            LoginForm log = new LoginForm();
+            if (log.ShowDialog() == DialogResult.OK)
+            {
+                InitializeComponent();
+            }
         }
 
+        private void btnTraining_Click(object sender, EventArgs e)
+        {
+            new TrainingForm().ShowDialog();
+        }
     }
 }

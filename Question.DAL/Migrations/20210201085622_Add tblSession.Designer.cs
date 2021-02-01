@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Question.DAL;
@@ -9,9 +10,10 @@ using Question.DAL;
 namespace Question.Migrations
 {
     [DbContext(typeof(MyContext))]
-    partial class MyContextModelSnapshot : ModelSnapshot
+    [Migration("20210201085622_Add tblSession")]
+    partial class AddtblSession
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -63,28 +65,6 @@ namespace Question.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("tblQuestions");
-                });
-
-            modelBuilder.Entity("Question.DAL.Result", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
-
-                    b.Property<int>("AnswerId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("SessionId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AnswerId");
-
-                    b.HasIndex("SessionId");
-
-                    b.ToTable("tblResult");
                 });
 
             modelBuilder.Entity("Question.DAL.Session", b =>
@@ -150,21 +130,6 @@ namespace Question.Migrations
                     b.HasOne("Question.DAL.Question", "Questions")
                         .WithMany("Answers")
                         .HasForeignKey("QuestionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Question.DAL.Result", b =>
-                {
-                    b.HasOne("Question.DAL.Answer", "Answer")
-                        .WithMany()
-                        .HasForeignKey("AnswerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Question.DAL.Session", "Session")
-                        .WithMany()
-                        .HasForeignKey("SessionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
