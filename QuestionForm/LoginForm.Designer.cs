@@ -40,7 +40,7 @@ namespace QuestionForm
             // 
             this.lbllogin.AutoSize = true;
             this.lbllogin.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbllogin.Location = new System.Drawing.Point(87, 104);
+            this.lbllogin.Location = new System.Drawing.Point(25, 74);
             this.lbllogin.Name = "lbllogin";
             this.lbllogin.Size = new System.Drawing.Size(59, 25);
             this.lbllogin.TabIndex = 0;
@@ -50,7 +50,7 @@ namespace QuestionForm
             // 
             this.lblpassword.AutoSize = true;
             this.lblpassword.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblpassword.Location = new System.Drawing.Point(87, 152);
+            this.lblpassword.Location = new System.Drawing.Point(25, 133);
             this.lblpassword.Name = "lblpassword";
             this.lblpassword.Size = new System.Drawing.Size(90, 25);
             this.lblpassword.TabIndex = 1;
@@ -58,14 +58,14 @@ namespace QuestionForm
             // 
             // tblogin
             // 
-            this.tblogin.Location = new System.Drawing.Point(209, 101);
+            this.tblogin.Location = new System.Drawing.Point(135, 75);
             this.tblogin.Name = "tblogin";
             this.tblogin.Size = new System.Drawing.Size(175, 27);
             this.tblogin.TabIndex = 2;
             // 
             // tbpassword
             // 
-            this.tbpassword.Location = new System.Drawing.Point(209, 153);
+            this.tbpassword.Location = new System.Drawing.Point(135, 131);
             this.tbpassword.Name = "tbpassword";
             this.tbpassword.Size = new System.Drawing.Size(175, 27);
             this.tbpassword.TabIndex = 3;
@@ -73,18 +73,19 @@ namespace QuestionForm
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button1.Location = new System.Drawing.Point(230, 218);
+            this.button1.Location = new System.Drawing.Point(157, 179);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 57);
+            this.button1.Size = new System.Drawing.Size(126, 57);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Вхід/реєстрація";
+            this.button1.Text = "Вхід";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(622, 450);
+            this.ClientSize = new System.Drawing.Size(727, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tbpassword);
             this.Controls.Add(this.tblogin);
