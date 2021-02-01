@@ -30,12 +30,12 @@ namespace QuestionForm
 
         private void btnTraining_Click(object sender, EventArgs e)
         {
-            // Запуск форми для проходження тренувального тесту
             new TrainingForm().ShowDialog();
         }
 
         private void btnExam_Click(object sender, EventArgs e)
         {
+            //
             // Запуск форми для складання іспиту
             new ExamForm().ShowDialog();
         }
