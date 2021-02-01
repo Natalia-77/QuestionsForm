@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Question.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,10 +11,16 @@ using System.Windows.Forms;
 
 namespace QuestionForm
 {
-    public partial class Form1 : Form
+    public partial class MenuForm : Form
     {
-        public Form1()
+        private readonly MyContext _context;
+
+        //first  commit Vlasiyk N.
+        // Hello, Mars!!!
+        public MenuForm()
         {
+            _context = new MyContext();
+            AddData.Add(_context);
             InitializeComponent();
         }
 
