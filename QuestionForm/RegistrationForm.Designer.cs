@@ -38,16 +38,16 @@ namespace QuestionForm
             this.tbName = new System.Windows.Forms.TextBox();
             this.tbLogin = new System.Windows.Forms.TextBox();
             this.tbPassword = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSaveUser = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(59, 25);
+            this.label1.Location = new System.Drawing.Point(67, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 40);
+            this.label1.Size = new System.Drawing.Size(241, 50);
             this.label1.TabIndex = 0;
             this.label1.Text = "Заповніть, будь ласка, \r\nвсі поля форми реєстрації";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -56,9 +56,9 @@ namespace QuestionForm
             // 
             this.lblSurname.AutoSize = true;
             this.lblSurname.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSurname.Location = new System.Drawing.Point(18, 91);
+            this.lblSurname.Location = new System.Drawing.Point(21, 121);
             this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(78, 20);
+            this.lblSurname.Size = new System.Drawing.Size(99, 25);
             this.lblSurname.TabIndex = 1;
             this.lblSurname.Text = "Прізвище";
             // 
@@ -66,9 +66,9 @@ namespace QuestionForm
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblName.Location = new System.Drawing.Point(18, 131);
+            this.lblName.Location = new System.Drawing.Point(21, 175);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(36, 20);
+            this.lblName.Size = new System.Drawing.Size(47, 25);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Ім\'я";
             // 
@@ -76,9 +76,9 @@ namespace QuestionForm
             // 
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblLogin.Location = new System.Drawing.Point(18, 171);
+            this.lblLogin.Location = new System.Drawing.Point(21, 228);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(47, 20);
+            this.lblLogin.Size = new System.Drawing.Size(60, 25);
             this.lblLogin.TabIndex = 1;
             this.lblLogin.Text = "Логін";
             // 
@@ -86,57 +86,63 @@ namespace QuestionForm
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPassword.Location = new System.Drawing.Point(18, 211);
+            this.lblPassword.Location = new System.Drawing.Point(21, 281);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(62, 20);
+            this.lblPassword.Size = new System.Drawing.Size(79, 25);
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "Пароль";
             // 
             // tbSurname
             // 
-            this.tbSurname.Location = new System.Drawing.Point(99, 88);
+            this.tbSurname.Location = new System.Drawing.Point(113, 117);
+            this.tbSurname.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbSurname.Name = "tbSurname";
-            this.tbSurname.Size = new System.Drawing.Size(193, 23);
+            this.tbSurname.Size = new System.Drawing.Size(220, 27);
             this.tbSurname.TabIndex = 2;
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(99, 128);
+            this.tbName.Location = new System.Drawing.Point(113, 171);
+            this.tbName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(193, 23);
+            this.tbName.Size = new System.Drawing.Size(220, 27);
             this.tbName.TabIndex = 2;
             // 
             // tbLogin
             // 
-            this.tbLogin.Location = new System.Drawing.Point(99, 168);
+            this.tbLogin.Location = new System.Drawing.Point(113, 224);
+            this.tbLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbLogin.Name = "tbLogin";
-            this.tbLogin.Size = new System.Drawing.Size(193, 23);
+            this.tbLogin.Size = new System.Drawing.Size(220, 27);
             this.tbLogin.TabIndex = 2;
             // 
             // tbPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(99, 208);
+            this.tbPassword.Location = new System.Drawing.Point(113, 277);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(193, 23);
+            this.tbPassword.Size = new System.Drawing.Size(220, 27);
             this.tbPassword.TabIndex = 2;
             // 
-            // button1
+            // btnSaveUser
             // 
-            this.button1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(58, 273);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 43);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Зареєструватись";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSaveUser.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnSaveUser.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSaveUser.Location = new System.Drawing.Point(66, 364);
+            this.btnSaveUser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSaveUser.Name = "btnSaveUser";
+            this.btnSaveUser.Size = new System.Drawing.Size(223, 57);
+            this.btnSaveUser.TabIndex = 3;
+            this.btnSaveUser.Text = "Зареєструватись";
+            this.btnSaveUser.UseVisualStyleBackColor = false;
+            this.btnSaveUser.Click += new System.EventHandler(this.btnSaveUser_Click);
             // 
             // RegistrationForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 342);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(355, 456);
+            this.Controls.Add(this.btnSaveUser);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.tbLogin);
             this.Controls.Add(this.tbName);
@@ -146,6 +152,7 @@ namespace QuestionForm
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblSurname);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "RegistrationForm";
             this.Text = "Реєстрація";
             this.ResumeLayout(false);
@@ -164,6 +171,6 @@ namespace QuestionForm
         private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.TextBox tbLogin;
         private System.Windows.Forms.TextBox tbPassword;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSaveUser;
     }
 }
