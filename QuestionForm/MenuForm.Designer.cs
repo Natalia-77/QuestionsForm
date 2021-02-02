@@ -83,6 +83,7 @@ namespace QuestionForm
             this.btnExam.TabIndex = 2;
             this.btnExam.Text = "Іспит";
             this.btnExam.UseVisualStyleBackColor = true;
+            this.btnExam.Click += new System.EventHandler(this.btnExam_Click);
             // 
             // btnExit
             // 
