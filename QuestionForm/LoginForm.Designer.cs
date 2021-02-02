@@ -46,7 +46,7 @@ namespace QuestionForm
             this.lbllogin.Location = new System.Drawing.Point(43, 80);
             this.lbllogin.Name = "lbllogin";
             this.lbllogin.Size = new System.Drawing.Size(47, 20);
-            this.lbllogin.TabIndex = 0;
+            this.lbllogin.TabIndex = 5;
             this.lbllogin.Text = "Логін";
             // 
             // lblpassword
@@ -56,7 +56,7 @@ namespace QuestionForm
             this.lblpassword.Location = new System.Drawing.Point(43, 122);
             this.lblpassword.Name = "lblpassword";
             this.lblpassword.Size = new System.Drawing.Size(62, 20);
-            this.lblpassword.TabIndex = 1;
+            this.lblpassword.TabIndex = 6;
             this.lblpassword.Text = "Пароль";
             // 
             // tblogin
@@ -66,7 +66,7 @@ namespace QuestionForm
             this.tblogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tblogin.Name = "tblogin";
             this.tblogin.Size = new System.Drawing.Size(154, 25);
-            this.tblogin.TabIndex = 2;
+            this.tblogin.TabIndex = 0;
             // 
             // tbpassword
             // 
@@ -75,7 +75,7 @@ namespace QuestionForm
             this.tbpassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbpassword.Name = "tbpassword";
             this.tbpassword.Size = new System.Drawing.Size(154, 25);
-            this.tbpassword.TabIndex = 3;
+            this.tbpassword.TabIndex = 1;
             // 
             // btnEntry
             // 
@@ -85,7 +85,7 @@ namespace QuestionForm
             this.btnEntry.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEntry.Name = "btnEntry";
             this.btnEntry.Size = new System.Drawing.Size(195, 43);
-            this.btnEntry.TabIndex = 4;
+            this.btnEntry.TabIndex = 2;
             this.btnEntry.Text = "Вхід";
             this.btnEntry.UseVisualStyleBackColor = false;
             this.btnEntry.Click += new System.EventHandler(this.button1_Click);
@@ -97,7 +97,7 @@ namespace QuestionForm
             this.lblTitle.Location = new System.Drawing.Point(58, 20);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(195, 40);
-            this.lblTitle.TabIndex = 5;
+            this.lblTitle.TabIndex = 7;
             this.lblTitle.Text = "Якщо Ви вже маєте акаунт,\r\nувійдіть в систему";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -108,7 +108,7 @@ namespace QuestionForm
             this.lblSetRegistration.Location = new System.Drawing.Point(83, 232);
             this.lblSetRegistration.Name = "lblSetRegistration";
             this.lblSetRegistration.Size = new System.Drawing.Size(145, 20);
-            this.lblSetRegistration.TabIndex = 5;
+            this.lblSetRegistration.TabIndex = 8;
             this.lblSetRegistration.Text = "або зареєструйтесь";
             this.lblSetRegistration.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -120,7 +120,7 @@ namespace QuestionForm
             this.btnRegistration.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRegistration.Name = "btnRegistration";
             this.btnRegistration.Size = new System.Drawing.Size(195, 43);
-            this.btnRegistration.TabIndex = 4;
+            this.btnRegistration.TabIndex = 3;
             this.btnRegistration.Text = "Реєстрація";
             this.btnRegistration.UseVisualStyleBackColor = false;
             this.btnRegistration.Click += new System.EventHandler(this.button1_Click);

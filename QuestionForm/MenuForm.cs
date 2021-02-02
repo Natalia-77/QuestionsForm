@@ -32,5 +32,15 @@ namespace QuestionForm
         {
             new TrainingForm().ShowDialog();
         }
+
+        private void btnExam_Click(object sender, EventArgs e)
+        {
+            new ExamForm(_context).ShowDialog();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

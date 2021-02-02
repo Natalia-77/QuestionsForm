@@ -36,7 +36,7 @@ namespace QuestionForm
                 {
                     UserInstance = user;
                     DialogResult = DialogResult.OK;
-                    MessageBox.Show($"Hello,{user.Name}");
+                    MessageBox.Show($"Вітаю,{user.Name}");
                 }
             }
             else
