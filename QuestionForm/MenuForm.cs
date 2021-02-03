@@ -39,5 +39,10 @@ namespace QuestionForm
             // Запуск форми для складання іспиту
             new ExamForm().ShowDialog();
         }
+
+        private void MenuForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

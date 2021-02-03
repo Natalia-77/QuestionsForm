@@ -30,7 +30,6 @@ namespace QuestionForm
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExamForm));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblNumberQuestion = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -69,7 +68,7 @@ namespace QuestionForm
             this.lblNumberQuestion.ForeColor = System.Drawing.Color.MediumBlue;
             this.lblNumberQuestion.Location = new System.Drawing.Point(131, 20);
             this.lblNumberQuestion.Name = "lblNumberQuestion";
-            this.lblNumberQuestion.Size = new System.Drawing.Size(133, 25);
+            this.lblNumberQuestion.Size = new System.Drawing.Size(127, 25);
             this.lblNumberQuestion.TabIndex = 0;
             this.lblNumberQuestion.Text = "Питання 1/10";
             // 
@@ -104,7 +103,6 @@ namespace QuestionForm
             // 
             // pBoxImage
             // 
-            //this.pBoxImage.Image = ((System.Drawing.Image)(resources.GetObject("pBoxImage.Image")));
             this.pBoxImage.Location = new System.Drawing.Point(487, 84);
             this.pBoxImage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBoxImage.Name = "pBoxImage";
@@ -212,6 +210,7 @@ namespace QuestionForm
             this.btnFinishExam.TabIndex = 6;
             this.btnFinishExam.Text = "Завершити";
             this.btnFinishExam.UseVisualStyleBackColor = false;
+            this.btnFinishExam.Click += new System.EventHandler(this.btnFinishExam_Click);
             // 
             // labelSec
             // 

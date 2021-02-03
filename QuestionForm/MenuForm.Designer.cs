@@ -29,7 +29,6 @@ namespace QuestionForm
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuForm));
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnTraining = new System.Windows.Forms.Button();
@@ -44,19 +43,17 @@ namespace QuestionForm
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Crimson;
-            this.label1.Location = new System.Drawing.Point(106, 28);
+            this.label1.Location = new System.Drawing.Point(93, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(195, 37);
+            this.label1.Size = new System.Drawing.Size(150, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Тести по ПДР";
             // 
             // pictureBox1
             // 
-           // this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(385, 32);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(337, 24);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(255, 296);
+            this.pictureBox1.Size = new System.Drawing.Size(223, 222);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -64,10 +61,9 @@ namespace QuestionForm
             // btnTraining
             // 
             this.btnTraining.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTraining.Location = new System.Drawing.Point(27, 104);
-            this.btnTraining.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnTraining.Location = new System.Drawing.Point(24, 78);
             this.btnTraining.Name = "btnTraining";
-            this.btnTraining.Size = new System.Drawing.Size(333, 60);
+            this.btnTraining.Size = new System.Drawing.Size(291, 45);
             this.btnTraining.TabIndex = 2;
             this.btnTraining.Text = "Тренування";
             this.btnTraining.UseVisualStyleBackColor = true;
@@ -76,10 +72,9 @@ namespace QuestionForm
             // btnExam
             // 
             this.btnExam.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnExam.Location = new System.Drawing.Point(27, 185);
-            this.btnExam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnExam.Location = new System.Drawing.Point(24, 139);
             this.btnExam.Name = "btnExam";
-            this.btnExam.Size = new System.Drawing.Size(333, 60);
+            this.btnExam.Size = new System.Drawing.Size(291, 45);
             this.btnExam.TabIndex = 2;
             this.btnExam.Text = "Іспит";
             this.btnExam.UseVisualStyleBackColor = true;
@@ -89,26 +84,27 @@ namespace QuestionForm
             // 
             this.btnExit.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnExit.Location = new System.Drawing.Point(27, 267);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnExit.Location = new System.Drawing.Point(24, 200);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(333, 60);
+            this.btnExit.Size = new System.Drawing.Size(291, 45);
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Вихід";
             this.btnExit.UseVisualStyleBackColor = false;
             // 
             // MenuForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(653, 356);
+            this.ClientSize = new System.Drawing.Size(571, 267);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnExam);
             this.Controls.Add(this.btnTraining);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MenuForm";
             this.Text = "            ";
+            this.Load += new System.EventHandler(this.MenuForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
