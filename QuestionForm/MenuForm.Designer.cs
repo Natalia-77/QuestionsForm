@@ -45,12 +45,13 @@ namespace QuestionForm
             this.label1.ForeColor = System.Drawing.Color.Crimson;
             this.label1.Location = new System.Drawing.Point(93, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 30);
+            this.label1.Size = new System.Drawing.Size(152, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Тести по ПДР";
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(337, 24);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(223, 222);
@@ -90,6 +91,7 @@ namespace QuestionForm
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Вихід";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // MenuForm
             // 

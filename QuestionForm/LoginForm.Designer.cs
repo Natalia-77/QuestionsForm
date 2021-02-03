@@ -45,8 +45,8 @@ namespace QuestionForm
             this.lbllogin.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbllogin.Location = new System.Drawing.Point(49, 107);
             this.lbllogin.Name = "lbllogin";
-            this.lbllogin.Size = new System.Drawing.Size(59, 25);
-            this.lbllogin.TabIndex = 0;
+            this.lbllogin.Size = new System.Drawing.Size(47, 20);
+            this.lbllogin.TabIndex = 5;
             this.lbllogin.Text = "Логін";
             // 
             // lblpassword
@@ -55,8 +55,8 @@ namespace QuestionForm
             this.lblpassword.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblpassword.Location = new System.Drawing.Point(49, 163);
             this.lblpassword.Name = "lblpassword";
-            this.lblpassword.Size = new System.Drawing.Size(76, 25);
-            this.lblpassword.TabIndex = 1;
+            this.lblpassword.Size = new System.Drawing.Size(62, 20);
+            this.lblpassword.TabIndex = 6;
             this.lblpassword.Text = "Пароль";
             // 
             // tblogin
@@ -64,16 +64,16 @@ namespace QuestionForm
             this.tblogin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tblogin.Location = new System.Drawing.Point(130, 107);
             this.tblogin.Name = "tblogin";
-            this.tblogin.Size = new System.Drawing.Size(175, 29);
-            this.tblogin.TabIndex = 2;
+            this.tblogin.Size = new System.Drawing.Size(154, 25);
+            this.tblogin.TabIndex = 0;
             // 
             // tbpassword
             // 
             this.tbpassword.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbpassword.Location = new System.Drawing.Point(130, 163);
             this.tbpassword.Name = "tbpassword";
-            this.tbpassword.Size = new System.Drawing.Size(175, 29);
-            this.tbpassword.TabIndex = 3;
+            this.tbpassword.Size = new System.Drawing.Size(154, 25);
+            this.tbpassword.TabIndex = 1;
             // 
             // btnEntry
             // 
@@ -81,8 +81,8 @@ namespace QuestionForm
             this.btnEntry.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEntry.Location = new System.Drawing.Point(66, 220);
             this.btnEntry.Name = "btnEntry";
-            this.btnEntry.Size = new System.Drawing.Size(223, 57);
-            this.btnEntry.TabIndex = 4;
+            this.btnEntry.Size = new System.Drawing.Size(195, 43);
+            this.btnEntry.TabIndex = 2;
             this.btnEntry.Text = "Вхід";
             this.btnEntry.UseVisualStyleBackColor = false;
             this.btnEntry.Click += new System.EventHandler(this.button1_Click);
@@ -93,8 +93,8 @@ namespace QuestionForm
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTitle.Location = new System.Drawing.Point(66, 27);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(246, 50);
-            this.lblTitle.TabIndex = 5;
+            this.lblTitle.Size = new System.Drawing.Size(195, 40);
+            this.lblTitle.TabIndex = 7;
             this.lblTitle.Text = "Якщо Ви вже маєте акаунт,\r\nувійдіть в систему";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -104,8 +104,8 @@ namespace QuestionForm
             this.lblSetRegistration.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSetRegistration.Location = new System.Drawing.Point(95, 309);
             this.lblSetRegistration.Name = "lblSetRegistration";
-            this.lblSetRegistration.Size = new System.Drawing.Size(182, 25);
-            this.lblSetRegistration.TabIndex = 5;
+            this.lblSetRegistration.Size = new System.Drawing.Size(145, 20);
+            this.lblSetRegistration.TabIndex = 8;
             this.lblSetRegistration.Text = "або зареєструйтесь";
             this.lblSetRegistration.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -115,8 +115,8 @@ namespace QuestionForm
             this.btnRegistration.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRegistration.Location = new System.Drawing.Point(66, 364);
             this.btnRegistration.Name = "btnRegistration";
-            this.btnRegistration.Size = new System.Drawing.Size(223, 57);
-            this.btnRegistration.TabIndex = 4;
+            this.btnRegistration.Size = new System.Drawing.Size(195, 43);
+            this.btnRegistration.TabIndex = 3;
             this.btnRegistration.Text = "Реєстрація";
             this.btnRegistration.UseVisualStyleBackColor = false;
             this.btnRegistration.Click += new System.EventHandler(this.buttonRegistration_Click);
