@@ -45,7 +45,7 @@ namespace QuestionForm
             InitializeComponent();
             result = new bool[_listQuestions.Count];
         }
-
+        DateTime begin = DateTime.Now.ToUniversalTime();
         int min = 10;//задаем время старта на таймере
         int sec = 0;
         int conter = 0;//счетчик тиков для досчета времени затраченого на сесию
@@ -152,6 +152,12 @@ namespace QuestionForm
             else
             {
                 this.Close();
+
+                timer1.Enabled = false;
+                DateTime finish = begin.AddSeconds(conter);
+                if (MessageBox.Show($"\nВременное сообщение\nВремя старта {begin}\nВремя финиша {finish} \ntik {conter} ") == DialogResult.OK)
+                    new RezaltFormTraining().ShowDialog();
+                
                 
             }
 
