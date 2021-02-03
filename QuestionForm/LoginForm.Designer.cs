@@ -43,7 +43,7 @@ namespace QuestionForm
             // 
             this.lbllogin.AutoSize = true;
             this.lbllogin.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbllogin.Location = new System.Drawing.Point(43, 80);
+            this.lbllogin.Location = new System.Drawing.Point(49, 107);
             this.lbllogin.Name = "lbllogin";
             this.lbllogin.Size = new System.Drawing.Size(47, 20);
             this.lbllogin.TabIndex = 5;
@@ -53,7 +53,7 @@ namespace QuestionForm
             // 
             this.lblpassword.AutoSize = true;
             this.lblpassword.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblpassword.Location = new System.Drawing.Point(43, 122);
+            this.lblpassword.Location = new System.Drawing.Point(49, 163);
             this.lblpassword.Name = "lblpassword";
             this.lblpassword.Size = new System.Drawing.Size(62, 20);
             this.lblpassword.TabIndex = 6;
@@ -62,8 +62,7 @@ namespace QuestionForm
             // tblogin
             // 
             this.tblogin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tblogin.Location = new System.Drawing.Point(114, 80);
-            this.tblogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tblogin.Location = new System.Drawing.Point(130, 107);
             this.tblogin.Name = "tblogin";
             this.tblogin.Size = new System.Drawing.Size(154, 25);
             this.tblogin.TabIndex = 0;
@@ -71,8 +70,7 @@ namespace QuestionForm
             // tbpassword
             // 
             this.tbpassword.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbpassword.Location = new System.Drawing.Point(114, 122);
-            this.tbpassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbpassword.Location = new System.Drawing.Point(130, 163);
             this.tbpassword.Name = "tbpassword";
             this.tbpassword.Size = new System.Drawing.Size(154, 25);
             this.tbpassword.TabIndex = 1;
@@ -81,8 +79,7 @@ namespace QuestionForm
             // 
             this.btnEntry.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnEntry.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEntry.Location = new System.Drawing.Point(58, 165);
-            this.btnEntry.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEntry.Location = new System.Drawing.Point(66, 220);
             this.btnEntry.Name = "btnEntry";
             this.btnEntry.Size = new System.Drawing.Size(195, 43);
             this.btnEntry.TabIndex = 2;
@@ -94,7 +91,7 @@ namespace QuestionForm
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTitle.Location = new System.Drawing.Point(58, 20);
+            this.lblTitle.Location = new System.Drawing.Point(66, 27);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(195, 40);
             this.lblTitle.TabIndex = 7;
@@ -105,7 +102,7 @@ namespace QuestionForm
             // 
             this.lblSetRegistration.AutoSize = true;
             this.lblSetRegistration.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSetRegistration.Location = new System.Drawing.Point(83, 232);
+            this.lblSetRegistration.Location = new System.Drawing.Point(95, 309);
             this.lblSetRegistration.Name = "lblSetRegistration";
             this.lblSetRegistration.Size = new System.Drawing.Size(145, 20);
             this.lblSetRegistration.TabIndex = 8;
@@ -116,20 +113,19 @@ namespace QuestionForm
             // 
             this.btnRegistration.BackColor = System.Drawing.Color.Transparent;
             this.btnRegistration.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRegistration.Location = new System.Drawing.Point(58, 273);
-            this.btnRegistration.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRegistration.Location = new System.Drawing.Point(66, 364);
             this.btnRegistration.Name = "btnRegistration";
             this.btnRegistration.Size = new System.Drawing.Size(195, 43);
             this.btnRegistration.TabIndex = 3;
             this.btnRegistration.Text = "Реєстрація";
             this.btnRegistration.UseVisualStyleBackColor = false;
-            this.btnRegistration.Click += new System.EventHandler(this.button1_Click);
+            this.btnRegistration.Click += new System.EventHandler(this.buttonRegistration_Click);
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 342);
+            this.ClientSize = new System.Drawing.Size(355, 456);
             this.Controls.Add(this.lblSetRegistration);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnRegistration);
@@ -138,7 +134,6 @@ namespace QuestionForm
             this.Controls.Add(this.tblogin);
             this.Controls.Add(this.lblpassword);
             this.Controls.Add(this.lbllogin);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Вхід";

@@ -44,5 +44,10 @@ namespace QuestionForm
                 MessageBox.Show("Try again");
             }
         }
+
+        private void buttonRegistration_Click(object sender, EventArgs e)
+        {
+            new RegistrationForm().ShowDialog();
+        }
     }
 }
