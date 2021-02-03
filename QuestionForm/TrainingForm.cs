@@ -14,5 +14,10 @@ namespace QuestionForm
         {
             InitializeComponent();
         }
+
+        private void btnFinishTraining_Click(object sender, EventArgs e)
+        {
+            new RezaltFormTraining().ShowDialog();
+        }
     }
 }

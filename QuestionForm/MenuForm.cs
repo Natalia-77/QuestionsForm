@@ -42,5 +42,10 @@ namespace QuestionForm
         {
             Application.Exit();
         }
+
+        private void MenuForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

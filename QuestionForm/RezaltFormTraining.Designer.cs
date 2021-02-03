@@ -29,19 +29,33 @@ namespace QuestionForm
         /// </summary>
         private void InitializeComponent()
         {
+            this.lblName = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(48, 27);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(38, 15);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "label1";
             // 
             // RezaltFormTraining
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(511, 284);
+            this.ClientSize = new System.Drawing.Size(324, 284);
+            this.Controls.Add(this.lblName);
             this.Name = "RezaltFormTraining";
             this.Text = "RezaltFormTraining";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblName;
     }
 }

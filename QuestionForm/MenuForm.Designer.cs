@@ -29,7 +29,6 @@ namespace QuestionForm
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuForm));
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnTraining = new System.Windows.Forms.Button();
@@ -52,7 +51,7 @@ namespace QuestionForm
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+           // this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(337, 24);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(223, 222);
@@ -107,6 +106,7 @@ namespace QuestionForm
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MenuForm";
             this.Text = "            ";
+            this.Load += new System.EventHandler(this.MenuForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

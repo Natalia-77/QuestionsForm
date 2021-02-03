@@ -29,7 +29,6 @@ namespace QuestionForm
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrainingForm));
             this.lblNumberQuestion = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutQuestion = new System.Windows.Forms.FlowLayoutPanel();
@@ -57,7 +56,7 @@ namespace QuestionForm
             this.lblNumberQuestion.ForeColor = System.Drawing.Color.MediumBlue;
             this.lblNumberQuestion.Location = new System.Drawing.Point(306, 24);
             this.lblNumberQuestion.Name = "lblNumberQuestion";
-            this.lblNumberQuestion.Size = new System.Drawing.Size(103, 25);
+            this.lblNumberQuestion.Size = new System.Drawing.Size(100, 25);
             this.lblNumberQuestion.TabIndex = 0;
             this.lblNumberQuestion.Text = "Питання 1";
             // 
@@ -92,7 +91,6 @@ namespace QuestionForm
             // 
             // pBoxImage
             // 
-           // this.pBoxImage.Image = ((System.Drawing.Image)(resources.GetObject("pBoxImage.Image")));
             this.pBoxImage.Location = new System.Drawing.Point(426, 63);
             this.pBoxImage.Name = "pBoxImage";
             this.pBoxImage.Size = new System.Drawing.Size(265, 265);
@@ -199,6 +197,7 @@ namespace QuestionForm
             this.btnFinishTraining.TabIndex = 6;
             this.btnFinishTraining.Text = "Завершити";
             this.btnFinishTraining.UseVisualStyleBackColor = false;
+            this.btnFinishTraining.Click += new System.EventHandler(this.btnFinishTraining_Click);
             // 
             // TrainingForm
             // 

@@ -68,7 +68,7 @@ namespace QuestionForm
             this.lblNumberQuestion.ForeColor = System.Drawing.Color.MediumBlue;
             this.lblNumberQuestion.Location = new System.Drawing.Point(131, 20);
             this.lblNumberQuestion.Name = "lblNumberQuestion";
-            this.lblNumberQuestion.Size = new System.Drawing.Size(133, 25);
+            this.lblNumberQuestion.Size = new System.Drawing.Size(127, 25);
             this.lblNumberQuestion.TabIndex = 0;
             this.lblNumberQuestion.Text = "Питання 1/10";
             // 
