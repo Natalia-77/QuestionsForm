@@ -35,9 +35,12 @@ namespace QuestionForm
 
         private void btnExam_Click(object sender, EventArgs e)
         {
-            //
-            // Запуск форми для складання іспиту
-            new ExamForm().ShowDialog();
+            new ExamForm(_context).ShowDialog();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

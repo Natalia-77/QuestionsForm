@@ -30,10 +30,9 @@ namespace QuestionForm
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExamForm));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblNumberQuestion = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblQuestion = new System.Windows.Forms.Label();
             this.flowLayoutQuestion = new System.Windows.Forms.FlowLayoutPanel();
             this.gbAnswers = new System.Windows.Forms.GroupBox();
             this.pBoxImage = new System.Windows.Forms.PictureBox();
@@ -73,21 +72,21 @@ namespace QuestionForm
             this.lblNumberQuestion.TabIndex = 0;
             this.lblNumberQuestion.Text = "Питання 1/10";
             // 
-            // label1
+            // lblQuestion
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(360, 60);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Текст запитання Текст запитання Текст запитання Текст запитання Текст запитання Т" +
+            this.lblQuestion.AutoSize = true;
+            this.lblQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblQuestion.Location = new System.Drawing.Point(3, 0);
+            this.lblQuestion.Name = "lblQuestion";
+            this.lblQuestion.Size = new System.Drawing.Size(360, 60);
+            this.lblQuestion.TabIndex = 1;
+            this.lblQuestion.Text = "Текст запитання Текст запитання Текст запитання Текст запитання Текст запитання Т" +
     "екст запитання Текст запитання Текст запитання";
             // 
             // flowLayoutQuestion
             // 
-            this.flowLayoutQuestion.Controls.Add(this.label1);
+            this.flowLayoutQuestion.Controls.Add(this.lblQuestion);
             this.flowLayoutQuestion.Location = new System.Drawing.Point(20, 63);
             this.flowLayoutQuestion.Name = "flowLayoutQuestion";
             this.flowLayoutQuestion.Size = new System.Drawing.Size(376, 118);
@@ -104,8 +103,7 @@ namespace QuestionForm
             // 
             // pBoxImage
             // 
-            //this.pBoxImage.Image = ((System.Drawing.Image)(resources.GetObject("pBoxImage.Image")));
-            this.pBoxImage.Location = new System.Drawing.Point(487, 84);
+            this.pBoxImage.Location = new System.Drawing.Point(426, 63);
             this.pBoxImage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pBoxImage.Name = "pBoxImage";
             this.pBoxImage.Size = new System.Drawing.Size(265, 265);
@@ -115,7 +113,7 @@ namespace QuestionForm
             // 
             // btnQstNumber1
             // 
-            this.btnQstNumber1.Location = new System.Drawing.Point(20, 412);
+            this.btnQstNumber1.Location = new System.Drawing.Point(183, 407);
             this.btnQstNumber1.Name = "btnQstNumber1";
             this.btnQstNumber1.Size = new System.Drawing.Size(45, 45);
             this.btnQstNumber1.TabIndex = 5;
@@ -124,7 +122,7 @@ namespace QuestionForm
             // 
             // btnQstNumber2
             // 
-            this.btnQstNumber2.Location = new System.Drawing.Point(71, 412);
+            this.btnQstNumber2.Location = new System.Drawing.Point(234, 407);
             this.btnQstNumber2.Name = "btnQstNumber2";
             this.btnQstNumber2.Size = new System.Drawing.Size(45, 45);
             this.btnQstNumber2.TabIndex = 5;
@@ -133,7 +131,7 @@ namespace QuestionForm
             // 
             // btnQstNumber3
             // 
-            this.btnQstNumber3.Location = new System.Drawing.Point(122, 412);
+            this.btnQstNumber3.Location = new System.Drawing.Point(285, 407);
             this.btnQstNumber3.Name = "btnQstNumber3";
             this.btnQstNumber3.Size = new System.Drawing.Size(45, 45);
             this.btnQstNumber3.TabIndex = 5;
@@ -142,7 +140,7 @@ namespace QuestionForm
             // 
             // btnQstNumber4
             // 
-            this.btnQstNumber4.Location = new System.Drawing.Point(173, 412);
+            this.btnQstNumber4.Location = new System.Drawing.Point(336, 407);
             this.btnQstNumber4.Name = "btnQstNumber4";
             this.btnQstNumber4.Size = new System.Drawing.Size(45, 45);
             this.btnQstNumber4.TabIndex = 5;
@@ -151,7 +149,7 @@ namespace QuestionForm
             // 
             // btnQstNumber5
             // 
-            this.btnQstNumber5.Location = new System.Drawing.Point(224, 412);
+            this.btnQstNumber5.Location = new System.Drawing.Point(387, 407);
             this.btnQstNumber5.Name = "btnQstNumber5";
             this.btnQstNumber5.Size = new System.Drawing.Size(45, 45);
             this.btnQstNumber5.TabIndex = 5;
@@ -160,7 +158,7 @@ namespace QuestionForm
             // 
             // btnQstNumber6
             // 
-            this.btnQstNumber6.Location = new System.Drawing.Point(275, 412);
+            this.btnQstNumber6.Location = new System.Drawing.Point(438, 407);
             this.btnQstNumber6.Name = "btnQstNumber6";
             this.btnQstNumber6.Size = new System.Drawing.Size(45, 45);
             this.btnQstNumber6.TabIndex = 5;
@@ -169,7 +167,7 @@ namespace QuestionForm
             // 
             // btnQstNumber7
             // 
-            this.btnQstNumber7.Location = new System.Drawing.Point(326, 412);
+            this.btnQstNumber7.Location = new System.Drawing.Point(489, 407);
             this.btnQstNumber7.Name = "btnQstNumber7";
             this.btnQstNumber7.Size = new System.Drawing.Size(45, 45);
             this.btnQstNumber7.TabIndex = 5;
@@ -178,7 +176,7 @@ namespace QuestionForm
             // 
             // btnQstNumber8
             // 
-            this.btnQstNumber8.Location = new System.Drawing.Point(377, 412);
+            this.btnQstNumber8.Location = new System.Drawing.Point(540, 407);
             this.btnQstNumber8.Name = "btnQstNumber8";
             this.btnQstNumber8.Size = new System.Drawing.Size(45, 45);
             this.btnQstNumber8.TabIndex = 5;
@@ -187,7 +185,7 @@ namespace QuestionForm
             // 
             // btnQstNumber9
             // 
-            this.btnQstNumber9.Location = new System.Drawing.Point(428, 412);
+            this.btnQstNumber9.Location = new System.Drawing.Point(591, 407);
             this.btnQstNumber9.Name = "btnQstNumber9";
             this.btnQstNumber9.Size = new System.Drawing.Size(45, 45);
             this.btnQstNumber9.TabIndex = 5;
@@ -196,7 +194,7 @@ namespace QuestionForm
             // 
             // btnQstNumber10
             // 
-            this.btnQstNumber10.Location = new System.Drawing.Point(479, 412);
+            this.btnQstNumber10.Location = new System.Drawing.Point(642, 407);
             this.btnQstNumber10.Name = "btnQstNumber10";
             this.btnQstNumber10.Size = new System.Drawing.Size(45, 45);
             this.btnQstNumber10.TabIndex = 5;
@@ -206,19 +204,20 @@ namespace QuestionForm
             // btnFinishExam
             // 
             this.btnFinishExam.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnFinishExam.Location = new System.Drawing.Point(559, 382);
+            this.btnFinishExam.Location = new System.Drawing.Point(20, 393);
             this.btnFinishExam.Name = "btnFinishExam";
             this.btnFinishExam.Size = new System.Drawing.Size(132, 75);
             this.btnFinishExam.TabIndex = 6;
-            this.btnFinishExam.Text = "Завершити";
+            this.btnFinishExam.Text = "Наступне\r\nпитання";
             this.btnFinishExam.UseVisualStyleBackColor = false;
+            this.btnFinishExam.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // labelSec
             // 
             this.labelSec.AutoSize = true;
-            this.labelSec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.labelSec.BackColor = System.Drawing.Color.Transparent;
             this.labelSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelSec.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.labelSec.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelSec.Location = new System.Drawing.Point(644, 24);
             this.labelSec.Name = "labelSec";
             this.labelSec.Size = new System.Drawing.Size(29, 20);
@@ -228,9 +227,9 @@ namespace QuestionForm
             // labelMin
             // 
             this.labelMin.AutoSize = true;
-            this.labelMin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.labelMin.BackColor = System.Drawing.Color.Transparent;
             this.labelMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.labelMin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelMin.Location = new System.Drawing.Point(601, 24);
             this.labelMin.Name = "labelMin";
             this.labelMin.Size = new System.Drawing.Size(29, 20);
@@ -240,9 +239,9 @@ namespace QuestionForm
             // labelTT
             // 
             this.labelTT.AutoSize = true;
-            this.labelTT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.labelTT.BackColor = System.Drawing.Color.Transparent;
             this.labelTT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelTT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.labelTT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelTT.Location = new System.Drawing.Point(630, 24);
             this.labelTT.Name = "labelTT";
             this.labelTT.Size = new System.Drawing.Size(14, 20);
@@ -252,9 +251,9 @@ namespace QuestionForm
             // labeltimer
             // 
             this.labeltimer.AutoSize = true;
-            this.labeltimer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.labeltimer.BackColor = System.Drawing.Color.Transparent;
             this.labeltimer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labeltimer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.labeltimer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labeltimer.Location = new System.Drawing.Point(442, 23);
             this.labeltimer.Name = "labeltimer";
             this.labeltimer.Size = new System.Drawing.Size(153, 21);
@@ -288,6 +287,7 @@ namespace QuestionForm
             this.Name = "ExamForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Іспит по ПДР";
+            this.Load += new System.EventHandler(this.ExamForm_Load);
             this.flowLayoutQuestion.ResumeLayout(false);
             this.flowLayoutQuestion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImage)).EndInit();
@@ -299,7 +299,7 @@ namespace QuestionForm
         #endregion
 
         private System.Windows.Forms.Label lblNumberQuestion;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblQuestion;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutQuestion;
         private System.Windows.Forms.GroupBox gbAnswers;
         private System.Windows.Forms.PictureBox pBoxImage;
