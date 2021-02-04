@@ -42,6 +42,8 @@ namespace QuestionForm
                 }
                 _listQuestions.Add(question);
             }
+
+           
             InitializeComponent();
             result = new bool[_listQuestions.Count];
         }

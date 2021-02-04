@@ -30,7 +30,7 @@ namespace QuestionForm
 
         private void btnTraining_Click(object sender, EventArgs e)
         {
-            new TrainingForm().ShowDialog();
+            new TrainingForm(_context).ShowDialog();
         }
 
         private void btnExam_Click(object sender, EventArgs e)
