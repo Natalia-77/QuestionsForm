@@ -17,7 +17,7 @@ namespace QuestionForm
 
         private void btnFinishTraining_Click(object sender, EventArgs e)
         {
-            new RezaltFormTraining().ShowDialog();
+            //new RezaltFormTraining(result).ShowDialog();
         }
     }
 }

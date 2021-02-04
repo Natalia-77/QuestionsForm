@@ -15,6 +15,7 @@ namespace QuestionForm
     {
         private readonly MyContext context;
         public User UserInstance { get; set; }
+        public static string log { get; set; }
 
         public LoginForm()
         {
@@ -26,7 +27,7 @@ namespace QuestionForm
         {
             string login = tblogin.Text;
             string pass = tbpassword.Text;
-
+            log = login;
             var user = context.Users.FirstOrDefault(x => x.Login == login);
 
             if (user != null)

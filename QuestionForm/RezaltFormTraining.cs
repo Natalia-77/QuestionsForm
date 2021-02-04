@@ -12,15 +12,39 @@ namespace QuestionForm
 {
     public partial class RezaltFormTraining : Form
     {
-        public RezaltFormTraining()
+        private int rightAnswer = 0;
+        MyContext context = new MyContext();
+        
+        DateTime finish=DateTime.Now.ToUniversalTime();
+        
+        public RezaltFormTraining(bool[] result)
         {
             
-            InitializeComponent();
-        }
-        
-        private void UserProfileForm_Load(object sender, EventArgs e)
-        {
-           
+        InitializeComponent();
+            
+            {
+                var user = context.Users.SingleOrDefault(x => x.Login == LoginForm.log);
+                lblName.Text = $"{user.Surname} {user.Name}";
+                
+            }
+            for (int i = 0; i < result.Length; i++)
+            {
+                if (result[i])
+                {
+                    rightAnswer++;
+                }
+                
+            }
+            DateTime begin = finish.AddSeconds(-ExamForm.count);
+            decimal mark = (decimal)rightAnswer / result.Length;
+            
+            lblCountQuestions.Text = $"Всього пройдено запитань: {result.Length}";
+            lblRightAnswers.Text = $"Кількість правильних відповідей: {rightAnswer}";
+            lblWrongAnswers.Text = $"Кількість неправильних відповідей: {result.Length- rightAnswer}";
+            lblMark.Text = $"Пройдено тест на: {mark*100} %";
+            lblStartDateTime.Text = $"Початок проходження тесту: {begin}";
+            lblEndDateTime.Text = $"Закінчення проходження тесту: {finish}";
+
         }
 
     }
