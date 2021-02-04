@@ -21,9 +21,9 @@ namespace QuestionForm
         {
             
         InitializeComponent();
-            
+            var user = context.Users.SingleOrDefault(x => x.Login == LoginForm.log);
             {
-                var user = context.Users.SingleOrDefault(x => x.Login == LoginForm.log);
+                //var user = context.Users.SingleOrDefault(x => x.Login == LoginForm.log);
                 lblName.Text = $"{user.Surname} {user.Name}";
                 
             }
@@ -45,7 +45,17 @@ namespace QuestionForm
             lblStartDateTime.Text = $"Початок проходження тесту: {begin}";
             lblEndDateTime.Text = $"Закінчення проходження тесту: {finish}";
 
+
+            var session = new List<Session>
+                {
+                    new Session{UserId=user.Id,Begin=begin,End=finish,Marks=mark*100}
+
+                };
+            context.Sessions.AddRange(session);
+            context.SaveChanges();
+
         }
 
+        
     }
 }
