@@ -42,69 +42,70 @@ namespace QuestionForm
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblName.Location = new System.Drawing.Point(122, -3);
+            this.lblName.Location = new System.Drawing.Point(98, 26);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(56, 42);
+            this.lblName.Size = new System.Drawing.Size(56, 21);
             this.lblName.TabIndex = 0;
-            this.lblName.Text = "\r\nName";
+            this.lblName.Text = "Name";
+            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblCountQuestions
             // 
             this.lblCountQuestions.AutoSize = true;
-            this.lblCountQuestions.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCountQuestions.Location = new System.Drawing.Point(12, 49);
+            this.lblCountQuestions.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCountQuestions.Location = new System.Drawing.Point(12, 69);
             this.lblCountQuestions.Name = "lblCountQuestions";
-            this.lblCountQuestions.Size = new System.Drawing.Size(123, 17);
+            this.lblCountQuestions.Size = new System.Drawing.Size(120, 17);
             this.lblCountQuestions.TabIndex = 1;
             this.lblCountQuestions.Text = "lblCountQuestions";
             // 
             // lblRightAnswers
             // 
             this.lblRightAnswers.AutoSize = true;
-            this.lblRightAnswers.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblRightAnswers.Location = new System.Drawing.Point(12, 75);
+            this.lblRightAnswers.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblRightAnswers.Location = new System.Drawing.Point(12, 103);
             this.lblRightAnswers.Name = "lblRightAnswers";
-            this.lblRightAnswers.Size = new System.Drawing.Size(108, 34);
+            this.lblRightAnswers.Size = new System.Drawing.Size(105, 17);
             this.lblRightAnswers.TabIndex = 2;
-            this.lblRightAnswers.Text = "\r\nlblRightAnswers";
+            this.lblRightAnswers.Text = "lblRightAnswers";
             // 
             // lblWrongAnswers
             // 
             this.lblWrongAnswers.AutoSize = true;
-            this.lblWrongAnswers.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblWrongAnswers.Location = new System.Drawing.Point(12, 111);
+            this.lblWrongAnswers.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblWrongAnswers.Location = new System.Drawing.Point(12, 137);
             this.lblWrongAnswers.Name = "lblWrongAnswers";
-            this.lblWrongAnswers.Size = new System.Drawing.Size(117, 34);
+            this.lblWrongAnswers.Size = new System.Drawing.Size(115, 17);
             this.lblWrongAnswers.TabIndex = 3;
-            this.lblWrongAnswers.Text = "\r\nlblWrongAnswers";
+            this.lblWrongAnswers.Text = "lblWrongAnswers";
             // 
             // lblMark
             // 
             this.lblMark.AutoSize = true;
-            this.lblMark.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblMark.Location = new System.Drawing.Point(12, 145);
+            this.lblMark.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblMark.Location = new System.Drawing.Point(12, 171);
             this.lblMark.Name = "lblMark";
-            this.lblMark.Size = new System.Drawing.Size(55, 34);
+            this.lblMark.Size = new System.Drawing.Size(53, 17);
             this.lblMark.TabIndex = 4;
-            this.lblMark.Text = "\r\nlblMark";
+            this.lblMark.Text = "lblMark";
             // 
             // lblStartDateTime
             // 
             this.lblStartDateTime.AutoSize = true;
-            this.lblStartDateTime.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblStartDateTime.Location = new System.Drawing.Point(12, 188);
+            this.lblStartDateTime.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblStartDateTime.Location = new System.Drawing.Point(12, 205);
             this.lblStartDateTime.Name = "lblStartDateTime";
-            this.lblStartDateTime.Size = new System.Drawing.Size(53, 17);
+            this.lblStartDateTime.Size = new System.Drawing.Size(51, 17);
             this.lblStartDateTime.TabIndex = 5;
             this.lblStartDateTime.Text = "lblStart";
             // 
             // lblEndDateTime
             // 
             this.lblEndDateTime.AutoSize = true;
-            this.lblEndDateTime.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblEndDateTime.Location = new System.Drawing.Point(12, 220);
+            this.lblEndDateTime.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblEndDateTime.Location = new System.Drawing.Point(12, 239);
             this.lblEndDateTime.Name = "lblEndDateTime";
-            this.lblEndDateTime.Size = new System.Drawing.Size(59, 17);
+            this.lblEndDateTime.Size = new System.Drawing.Size(54, 17);
             this.lblEndDateTime.TabIndex = 6;
             this.lblEndDateTime.Text = "lblfinish";
             // 
@@ -121,6 +122,7 @@ namespace QuestionForm
             this.Controls.Add(this.lblCountQuestions);
             this.Controls.Add(this.lblName);
             this.Name = "RezaltFormTraining";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Результат проходження тесту";
             this.ResumeLayout(false);
             this.PerformLayout();
