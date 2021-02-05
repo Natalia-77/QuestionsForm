@@ -21,9 +21,17 @@ namespace QuestionForm
 
         public ExamForm(MyContext context)
         {
+            Random rnd = new Random();
+            
+            // Створюємо список для запитань на іспит
             _listQuestions = new List<QuestionModel>();
+
+            // Створюємо тимчасовий список, в який завантажимо всі запитання з БД
+            List<QuestionModel> newList = new List<QuestionModel>();
+
             foreach (var item in context.Questions.ToList())
             {
+                // запитання
                 QuestionModel question = new QuestionModel
                 {
                     Text = item.Text,
@@ -33,6 +41,7 @@ namespace QuestionForm
                 foreach (var answer in context.Answers
                     .Where(x=>x.QuestionId==item.Id))
                 {
+                    // відповіді
                     var answerModel = new QuestionAnswerModel
                     {
                         Text = answer.Text,
@@ -40,11 +49,16 @@ namespace QuestionForm
                     };
                     question.Answers.Add(answerModel);
                 }
-                _listQuestions.Add(question);
+                // Заповнюємо тимчасовий список всіма запитаннями і відповідями
+                newList.Add(question);
+                
+                // Випадковим чином вибираємо тільки 10 запитань для іспиту
+                _listQuestions = newList.OrderBy(x => rnd.Next()).Take(10).ToList();
             }
-
            
             InitializeComponent();
+
+            // Заповнюємо масив правильних відповідей
             result = new bool[_listQuestions.Count];
         }
         
@@ -160,8 +174,6 @@ namespace QuestionForm
                 timer1.Enabled = false;
                
                     new RezaltFormTraining( result).ShowDialog();
-                
-                
             }
 
         }
