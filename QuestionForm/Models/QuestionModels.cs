@@ -19,6 +19,7 @@ namespace QuestionForm.Models
     /// </summary>
     public class QuestionAnswerModel
     {
+        public int Id { get; set; }
         public string Text { get; set; }
         public bool IsTrue { get; set; }
     }

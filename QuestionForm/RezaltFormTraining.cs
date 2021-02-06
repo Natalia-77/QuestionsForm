@@ -12,47 +12,42 @@ namespace QuestionForm
 {
     public partial class RezaltFormTraining : Form
     {
-        private int rightAnswer = 0;
+       // private int rightAnswer = 0;
         MyContext context = new MyContext();
-        
-        DateTime finish=DateTime.Now.ToUniversalTime();
-        
-        public RezaltFormTraining(bool[] result)
+        public User UserResult { get; set; }
+
+        // DateTime finish=DateTime.Now.ToUniversalTime();
+
+        public RezaltFormTraining(ExamForm exam)
         {
-            
-        InitializeComponent();
-            var user = context.Users.SingleOrDefault(x => x.Login == LoginForm.log);
-            {
+
+            InitializeComponent();
+            UserResult = exam.LogUser;
+            // var user = context.Users.SingleOrDefault(x => x.Login == LoginForm.log);
+            var user = context.Users.SingleOrDefault(x => x.Id == UserResult.Id);
+            //{
                 //var user = context.Users.SingleOrDefault(x => x.Login == LoginForm.log);
                 lblName.Text = $"{user.Surname} {user.Name}";
-                
-            }
-            for (int i = 0; i < result.Length; i++)
-            {
-                if (result[i])
-                {
-                    rightAnswer++;
-                }
-                
-            }
-            DateTime begin = finish.AddSeconds(-ExamForm.count);
-            decimal mark = (decimal)rightAnswer / result.Length;
             
-            lblCountQuestions.Text = $"Всього пройдено запитань: {result.Length}";
-            lblRightAnswers.Text = $"Кількість правильних відповідей: {rightAnswer}";
-            lblWrongAnswers.Text = $"Кількість неправильних відповідей: {result.Length- rightAnswer}";
-            lblMark.Text = $"Пройдено тест на: {mark*100} %";
-            lblStartDateTime.Text = $"Початок проходження тесту: {begin}";
-            lblEndDateTime.Text = $"Закінчення проходження тесту: {finish}";
+            //}
+            // DateTime begin = finish.AddSeconds(-ExamForm.count);
+            //decimal mark = (decimal)rightAnswer / result.Length;
+            
+            lblCountQuestions.Text = $"Всього пройдено запитань: {exam.listcount}";
+            lblRightAnswers.Text = $"Кількість правильних відповідей: {exam.right}";
+            lblWrongAnswers.Text = $"Кількість неправильних відповідей: {exam.listcount-exam.right}";
+            lblMark.Text = $"Пройдено тест на: {(exam.right*100)/exam.listcount} %";
+            lblStartDateTime.Text = $"Початок проходження тесту: {exam.start_sess}";
+            lblEndDateTime.Text = $"Закінчення проходження тесту: {exam.finish_sess}";
 
 
-            var session = new List<Session>
-                {
-                    new Session{UserId=user.Id,Begin=begin,End=finish,Marks=mark*100}
+            //var session = new List<Session>
+            //    {
+            //        new Session{UserId=user.Id,Begin=begin,End=finish,Marks=mark*100}
 
-                };
-            context.Sessions.AddRange(session);
-            context.SaveChanges();
+            //    };
+            //context.Sessions.AddRange(session);
+            //context.SaveChanges();
 
         }
 
