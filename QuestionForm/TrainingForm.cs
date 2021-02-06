@@ -18,7 +18,7 @@ namespace QuestionForm
         // Поточне питання
         private int indexQuestion = 0;
         private bool[] result;
-
+        public static int count { get; set; }
         public TrainingForm(MyContext context)
         {
             _listQuestions = new List<QuestionModel>();
