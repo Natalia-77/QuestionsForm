@@ -15,8 +15,11 @@ namespace QuestionForm
     {
         private readonly MyContext _context;
 
-        //first  commit Vlasiyk N.
-        // Hello, Mars!!!
+        /// <summary>
+        /// Властивість,де містяться дані про конкретного користувача.
+        /// </summary>
+        public User LogInstancem { get; set; }
+     
         public MenuForm()
         {
            _context = new MyContext();
@@ -24,18 +27,21 @@ namespace QuestionForm
             LoginForm log = new LoginForm();
             if (log.ShowDialog() == DialogResult.OK)
             {
+                LogInstancem = log.UserInstance;                
                 InitializeComponent();
             }
+           
         }
 
         private void btnTraining_Click(object sender, EventArgs e)
         {
-            new TrainingForm(_context).ShowDialog();
+            new TrainingForm(this).ShowDialog();
         }
 
         private void btnExam_Click(object sender, EventArgs e)
         {
-            new ExamForm(_context).ShowDialog();
+            new ExamForm(this).ShowDialog();
+           
         }
 
         private void btnExit_Click(object sender, EventArgs e)
