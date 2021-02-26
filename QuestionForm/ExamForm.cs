@@ -2,11 +2,9 @@
 using QuestionForm.Models;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace QuestionForm
@@ -231,13 +229,13 @@ namespace QuestionForm
                 gbOneItem = new System.Windows.Forms.RadioButton();
                 gbOneItem.AutoSize = true;
                 gbOneItem.Location = new System.Drawing.Point(25, startPosition);
-                gbOneItem.Name = $"gbItem{i}";
+                gbOneItem.Name = $"gbItem{i}";                
                 gbOneItem.Tag = answers[i];
                 gbOneItem.Size = new System.Drawing.Size(67, 19);
                 gbOneItem.TabIndex = 1;
                 gbOneItem.TabStop = true;
                 gbOneItem.Text = answers[i].Text;
-                gbOneItem.UseVisualStyleBackColor = true;
+                gbOneItem.UseVisualStyleBackColor = true;               
                 gbAnswers.Controls.Add(gbOneItem);
                 startPosition += dy;
             }
@@ -260,26 +258,73 @@ namespace QuestionForm
                 {
                     var answer = radioButton.Tag as QuestionAnswerModel;
                     result[indexQuestion] = answer.IsTrue;
-
+                    indexQuestion++;
                     var infoid = context.Answers.Where(x => x.Id == answer.Id).ToList();
                     foreach (var item in infoid)
                     {
                         context.Results.Add(new Result { SessionId = idsession, AnswerId = item.Id });
                         context.SaveChanges();
-                    }
+                        if (answer.IsTrue)
+                        {
+                            if (indexQuestion == 1)
+                                btnQstNumber1.BackColor = Color.Green;
+                            if (indexQuestion == 2)
+                                btnQstNumber2.BackColor = Color.Green;
+                            if (indexQuestion == 3)
+                                btnQstNumber3.BackColor = Color.Green;
+                            if (indexQuestion == 4)
+                                btnQstNumber4.BackColor = Color.Green;
+                            if (indexQuestion == 5)
+                                btnQstNumber5.BackColor = Color.Green;
+                            if (indexQuestion == 6)
+                                btnQstNumber6.BackColor = Color.Green;
+                            if (indexQuestion == 7)
+                                btnQstNumber7.BackColor = Color.Green;
+                            if (indexQuestion == 8)
+                                btnQstNumber8.BackColor = Color.Green;
+                            if (indexQuestion == 9)
+                                btnQstNumber9.BackColor = Color.Green;
+                            if (indexQuestion == 10)
+                                btnQstNumber10.BackColor = Color.Green;                      
 
-                }
+                        }
+                        else
+                        {
+                            if(indexQuestion==1)
+                                btnQstNumber1.BackColor = Color.Red;
+                            if (indexQuestion == 2)
+                                btnQstNumber2.BackColor = Color.Red;
+                            if (indexQuestion == 3)
+                                btnQstNumber3.BackColor = Color.Red;
+                            if (indexQuestion == 4)
+                                btnQstNumber4.BackColor = Color.Red;
+                            if (indexQuestion == 5)
+                                btnQstNumber5.BackColor = Color.Red;
+                            if (indexQuestion == 6)
+                                btnQstNumber6.BackColor = Color.Red;
+                            if (indexQuestion == 7)
+                                btnQstNumber7.BackColor = Color.Red;
+                            if (indexQuestion == 8)
+                                btnQstNumber8.BackColor = Color.Red;
+                            if (indexQuestion == 9)
+                                btnQstNumber9.BackColor = Color.Red;
+                            if (indexQuestion == 10)
+                                btnQstNumber10.BackColor = Color.Red;
+                        }
+                    }                
 
-            }            
+                }             
+                            }
             foreach (var item in result)
             {
                 if(item==true)
                 {
                     rightAnswer++;
+                    
                 }
             }         
           
-            indexQuestion++;
+            //indexQuestion++;
 
             if(indexQuestion<_listQuestions.Count)
             {
