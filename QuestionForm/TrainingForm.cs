@@ -186,6 +186,7 @@ namespace QuestionForm
                 {
                     var answer = radioButton.Tag as QuestionAnswerModel;
                     result[indexQuestion] = answer.IsTrue;
+                    indexQuestion++;
 
                     var idsess = context.Answers.Where(x => x.Id == answer.Id).ToList();
                     foreach (var item in idsess)
@@ -203,7 +204,7 @@ namespace QuestionForm
                     right_answer++;
                 }
             }
-            indexQuestion++;
+            //indexQuestion++;
 
             if (indexQuestion < _listQuestions.Count)
             {
