@@ -41,7 +41,6 @@ namespace QuestionForm
         private void btnExam_Click(object sender, EventArgs e)
         {
             new ExamForm(this).ShowDialog();
-           
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -52,6 +51,11 @@ namespace QuestionForm
         private void MenuForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            new ProfileForm().ShowDialog();
         }
     }
 }
