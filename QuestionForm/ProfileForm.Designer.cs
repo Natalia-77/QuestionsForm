@@ -47,9 +47,9 @@ namespace QuestionForm
             this.lblSurnameTitle.AutoSize = true;
             this.lblSurnameTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSurnameTitle.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblSurnameTitle.Location = new System.Drawing.Point(11, 13);
+            this.lblSurnameTitle.Location = new System.Drawing.Point(13, 17);
             this.lblSurnameTitle.Name = "lblSurnameTitle";
-            this.lblSurnameTitle.Size = new System.Drawing.Size(89, 21);
+            this.lblSurnameTitle.Size = new System.Drawing.Size(109, 28);
             this.lblSurnameTitle.TabIndex = 0;
             this.lblSurnameTitle.Text = "Прізвище:";
             // 
@@ -58,9 +58,9 @@ namespace QuestionForm
             this.lblNameTitle.AutoSize = true;
             this.lblNameTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblNameTitle.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblNameTitle.Location = new System.Drawing.Point(11, 38);
+            this.lblNameTitle.Location = new System.Drawing.Point(13, 51);
             this.lblNameTitle.Name = "lblNameTitle";
-            this.lblNameTitle.Size = new System.Drawing.Size(44, 21);
+            this.lblNameTitle.Size = new System.Drawing.Size(54, 28);
             this.lblNameTitle.TabIndex = 0;
             this.lblNameTitle.Text = "Ім\'я:";
             // 
@@ -68,9 +68,9 @@ namespace QuestionForm
             // 
             this.lblSurname.AutoSize = true;
             this.lblSurname.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSurname.Location = new System.Drawing.Point(116, 9);
+            this.lblSurname.Location = new System.Drawing.Point(133, 12);
             this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(99, 25);
+            this.lblSurname.Size = new System.Drawing.Size(124, 32);
             this.lblSurname.TabIndex = 0;
             this.lblSurname.Text = "Прізвище";
             // 
@@ -78,9 +78,9 @@ namespace QuestionForm
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblName.Location = new System.Drawing.Point(116, 34);
+            this.lblName.Location = new System.Drawing.Point(133, 45);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(47, 25);
+            this.lblName.Size = new System.Drawing.Size(58, 32);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Ім\'я";
             // 
@@ -89,9 +89,9 @@ namespace QuestionForm
             this.lblSession.AutoSize = true;
             this.lblSession.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSession.ForeColor = System.Drawing.Color.Red;
-            this.lblSession.Location = new System.Drawing.Point(12, 78);
+            this.lblSession.Location = new System.Drawing.Point(14, 104);
             this.lblSession.Name = "lblSession";
-            this.lblSession.Size = new System.Drawing.Size(172, 21);
+            this.lblSession.Size = new System.Drawing.Size(212, 28);
             this.lblSession.TabIndex = 0;
             this.lblSession.Text = "Всі сесії користувача:";
             // 
@@ -103,21 +103,25 @@ namespace QuestionForm
             this.ColEndSession,
             this.ColLengthSession,
             this.ColMark});
-            this.dataGridView1.Location = new System.Drawing.Point(16, 114);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 152);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(597, 276);
+            this.dataGridView1.Size = new System.Drawing.Size(682, 368);
             this.dataGridView1.TabIndex = 1;
             // 
             // ColStartSession
             // 
             this.ColStartSession.HeaderText = "Початок сесії";
+            this.ColStartSession.MinimumWidth = 6;
             this.ColStartSession.Name = "ColStartSession";
             this.ColStartSession.Width = 150;
             // 
             // ColEndSession
             // 
             this.ColEndSession.HeaderText = "Кінець сесії";
+            this.ColEndSession.MinimumWidth = 6;
             this.ColEndSession.Name = "ColEndSession";
             this.ColEndSession.Width = 150;
             // 
@@ -125,28 +129,32 @@ namespace QuestionForm
             // 
             this.ColLengthSession.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.ColLengthSession.HeaderText = "Тривалість сесії";
+            this.ColLengthSession.MinimumWidth = 6;
             this.ColLengthSession.Name = "ColLengthSession";
             // 
             // ColMark
             // 
             this.ColMark.HeaderText = "Оцінка за іспит";
+            this.ColMark.MinimumWidth = 6;
             this.ColMark.Name = "ColMark";
             this.ColMark.Width = 120;
             // 
             // ProfileForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 408);
+            this.ClientSize = new System.Drawing.Size(719, 544);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblSession);
             this.Controls.Add(this.lblNameTitle);
             this.Controls.Add(this.lblSurname);
             this.Controls.Add(this.lblSurnameTitle);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ProfileForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Профіль користувача";
+            this.Load += new System.EventHandler(this.ProfileForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,11 +1,5 @@
 ﻿using Question.DAL;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace QuestionForm
@@ -28,14 +22,14 @@ namespace QuestionForm
             label4.Text = $"Кількість неправильних відповідей: {uncorrect}";
             label5.Text = $"Пройдено тест на: {(train.rightans * 100)/train.newlistcount} %";
 
-            if(uncorrect>2)
-            {
-                label6.Text= "У вас більше 2 помилок! Вчіть далі!";
-            }
-            else
-            {
-                label6.Text=" ";
-            }
+            //if(uncorrect>2)
+            //{
+            //    label6.Text= "У вас більше 2 помилок! Вчіть далі!";
+            //}
+            //else
+            //{
+            //    label6.Text=" ";
+            //}
 
         }
     }
