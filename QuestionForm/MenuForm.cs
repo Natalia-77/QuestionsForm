@@ -48,14 +48,14 @@ namespace QuestionForm
             Application.Exit();
         }
 
-        private void MenuForm_Load(object sender, EventArgs e)
-        {
+        //private void MenuForm_Load(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            new ProfileForm().ShowDialog();
+            new ProfileForm(this).ShowDialog();
         }
     }
 }
